@@ -172,17 +172,19 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     color: var(--sand-dollar);
+    animation: fadeIn 1.5s ease;
 }
 
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    animation: fadeIn 1s ease;
+    animation: fadeInUp 1s ease 0.5s backwards;
 }
 
 .hero-content h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.7s backwards;
 }
 
 .cta-button {
@@ -193,6 +195,7 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease;
+    animation: fadeInUp 1s ease 0.9s backwards;
 }
 
 .cta-button:hover {
@@ -249,6 +252,11 @@ nav a:hover {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.species-card:hover {
+    transform: translateY(-10px);
 }
 
 .species-card img {
