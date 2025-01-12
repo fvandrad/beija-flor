@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: slideDown 0.5s ease;
 }
 
 .logo {
@@ -36,6 +37,7 @@ header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    animation: fadeIn 0.5s ease;
 }
 
 nav ul {
@@ -43,7 +45,7 @@ nav ul {
     gap: 2rem;
     list-style: none;
     align-items: center;
-
+    animation: fadeIn 0.5s ease;
 }
 
 nav a {
@@ -54,6 +56,8 @@ nav a {
 
 nav a:hover {
     color: var(--teal);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
 }
 
 .hamburger {
@@ -63,6 +67,7 @@ nav a:hover {
     cursor: pointer;
     padding: 0;
     z-index: 1100;
+    animation: fadeIn 0.5s ease;
 }
 
 .bar {
@@ -88,6 +93,7 @@ nav a:hover {
         width: 100%;
         height: calc(100vh - 70px);
         transition: 0.3s;
+        animation: slideIn 0.3s ease-out;
     }
 
     #nav-menu.active {
@@ -102,7 +108,14 @@ nav a:hover {
 
     nav li {
         margin: 0.1rem 0;
+        animation: fadeInUp 0.3s ease-out forwards;
+        opacity: 0;
     }
+
+    nav li:nth-child(1) { animation-delay: 0.1s; }
+    nav li:nth-child(2) { animation-delay: 0.2s; }
+    nav li:nth-child(3) { animation-delay: 0.3s; }
+    nav li:nth-child(4) { animation-delay: 0.4s; }
 
     /* Animação do hamburger */
     .hamburger.active .bar:nth-child(2) {
@@ -115,6 +128,37 @@ nav a:hover {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
