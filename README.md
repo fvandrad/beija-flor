@@ -25,7 +25,7 @@ Abra o arquivo `index.html` no seu navegador para visualizar a coleção de imag
 Contribuições são bem-vindas! Envie um pull request ou abra uma issue.
 
 ## Apoie Nosso Projeto
-Com seu apoio, podemos continuar publicando mais projetos incríveis como este. Se você acredita no nosso trabalho e deseja ver mais inovações, considere se tornar um patrocinador. Juntos, podemos alcançar grandes conquistas e apoiar o desenvolvimento de código aberto!
+Ajude-nos a continuar criando projetos incríveis e apoiando o desenvolvimento de código aberto. Considere se tornar um patrocinador e juntos alcançaremos grandes conquistas!
 
 ## 📄 Licença
 Este projeto está licenciado sob a licença MIT.
